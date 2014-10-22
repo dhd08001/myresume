@@ -1,0 +1,191 @@
+/*Global values declared at the top*/
+/*Import directives*/
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: black; }
+
+#content {
+  width: 1900px;
+  height: 950px;
+  margin: 0 auto; }
+
+.container {
+  width: 100px;
+  height: 100px;
+  float: left;
+  width: 949px;
+  border-bottom: 1px dashed #222; }
+
+.containerLeft {
+  border-right: 1px dashed #222; }
+
+#topLeftContainer {
+  height: 190px; }
+  #topLeftContainer #textContainer {
+    height: 100px;
+    width: 70%;
+    margin: 0 auto; }
+    #topLeftContainer #textContainer h1 {
+      width: 55%;
+      color: white;
+      font-family: sans-serif;
+      font-size: 40px;
+      margin: 0 auto;
+      margin-top: 60px; }
+    #topLeftContainer #textContainer p {
+      width: 40%;
+      color: white;
+      font-family: sans-serif;
+      font-size: 25px;
+      margin: 0 auto; }
+
+#topRightContainer {
+  height: 190px; }
+
+#middleLeftContainer {
+  height: 690px;
+  /*$headerFont,$borderColor,$photoContainerWidth,$photoContainerHeight,$photoContainerOffset,
+  $photoContainerImageOffset,$photoContainerImageWidth,
+  $photoContainerImageHeight*/ }
+  #middleLeftContainer .photoContainer {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 500px;
+    height: 490px;
+    border: 1px dotted white;
+    border-radius: 10px;
+    border-color: #222; }
+    #middleLeftContainer .photoContainer h2 {
+      color: white;
+      font-family: sans-serif;
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 87px; }
+    #middleLeftContainer .photoContainer .photoContainerImage {
+      margin: 0 auto;
+      margin-top: 10px;
+      background-image: url("../pics/myphoto.jpg");
+      width: 355px;
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: 355px 400px;
+      border-radius: 5px; }
+
+#middleRightContainer {
+  height: 690px;
+  /*newBar mixin(x pixels from border, y pixels from Border, icon pixel size, icons per row)*/
+  /* Chrome, Safari, Opera */
+  /* Standard syntax */ }
+  #middleRightContainer .informationContainer {
+    float: left;
+    width: 600px;
+    height: 650px;
+    border: 1px solid red; }
+    #middleRightContainer .informationContainer h2 {
+      color: white;
+      font-family: sans-serif;
+      margin-top: 120px;
+      width: 200px;
+      border: 1px solid green; }
+    #middleRightContainer .informationContainer p {
+      color: white;
+      width: 150px;
+      border: 1px solid orange; }
+    #middleRightContainer .informationContainer .firstInformationContainerHeader {
+      margin-top: 0px; }
+    #middleRightContainer .informationContainer .firstInformationContainerParagraph {
+      margin-top: 0px;
+      width: 300px; }
+  #middleRightContainer .floatRightHeader {
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px; }
+  #middleRightContainer .floatRightParagraph {
+    float: right;
+    width: 100px;
+    margin-top: 0px; }
+@-webkit-keyframes myfirst {
+  from {
+    background-color: red; }
+  to {
+    background-color: yellow; } }
+@keyframes myfirst {
+  from {
+    background-color: red; }
+  to {
+    background-color: yellow; } }
+  #middleRightContainer .divAnimation {
+    webkit-animation: myfirst 5s;
+    /* Chrome, Safari, Opera */
+    animation: myfirst 5s; }
+  #middleRightContainer .socialContainer {
+    float: right;
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 200px;
+    width: 96px; }
+    #middleRightContainer .socialContainer h2 {
+      margin: 0px;
+      padding: 0px;
+      color: white;
+      font-family: sans-serif; }
+    #middleRightContainer .socialContainer .iconContainer {
+      margin: 0px;
+      padding: 0px;
+      margin-top: 10px;
+      width: 96px;
+      height: 40px; }
+      #middleRightContainer .socialContainer .iconContainer li {
+        margin: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        list-style-type: none;
+        display: inline-block;
+        width: 40px;
+        height: 40px; }
+        #middleRightContainer .socialContainer .iconContainer li a {
+          margin-left: 0px;
+          width: 40px;
+          height: 40px; }
+          #middleRightContainer .socialContainer .iconContainer li a .facebookImage {
+            margin: 0px;
+            padding: 0px;
+            width: 44px;
+            height: 44px;
+            background-image: url("../pics/facebookicon.png");
+            background-size: 44px 44px;
+            background-repeat: no-repeat;
+            border-radius: 5px; }
+          #middleRightContainer .socialContainer .iconContainer li a .twitterImage {
+            margin: 0px;
+            padding: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            background-image: url("../pics/twittericon.png");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+            border-radius: 5px; }
+          #middleRightContainer .socialContainer .iconContainer li a .linkedinImage {
+            margin: 0px;
+            padding: 0px;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            background-image: url("../pics/linkedinicon.png");
+            background-size: 40px 40px;
+            background-repeat: no-repeat;
+            border-radius: 5px; }
+    #middleRightContainer .socialContainer .firstIconContainer {
+      margin-top: 5px; }
+
+#bottomLeftContainer {
+  border-bottom: none;
+  height: 60px; }
+
+#bottomRightContainer {
+  border-bottom: none;
+  height: 60px; }
+
+/*# sourceMappingURL=mainstyle.css.map */

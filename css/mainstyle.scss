@@ -1,0 +1,139 @@
+/*Global values declared at the top*/
+$backgroundColor:black;
+$containerColor:black;
+$headerFont:sans-serif;
+$topHeight:190px;
+$middleHeight:690px;
+$bottomHeight:60px;
+$borderColor:#222;
+
+/*Import directives*/
+@import "socialBar";
+@import "photoContainer";
+
+
+body{
+	padding:0px;
+	margin:0px;
+	background-color:$backgroundColor;	
+}
+
+#content{
+	width:1900px;
+	height:950px;
+	margin:0 auto;
+}
+
+.container{
+	width:100px;
+	height:100px;
+	float:left;
+	width:949px;
+	border-bottom:1px dashed $borderColor;
+	
+}
+
+.containerLeft{
+	border-right:1px dashed $borderColor;
+}
+
+#topLeftContainer{
+	height:$topHeight;
+		
+		#textContainer{
+		height:100px;
+		width:70%;
+		margin:0 auto;
+
+		h1{
+			width:55%;
+			color:white;
+			font-family:$headerFont;  
+			font-size:40px;
+			margin:0 auto;
+			margin-top:60px;
+		}
+		p{
+			width:40%;
+			color:white;
+			font-family:$headerFont;
+			font-size:25px;
+			margin:0 auto;
+		}
+	}
+}
+
+#topRightContainer{
+	height:$topHeight;
+}
+
+#middleLeftContainer{
+	height:$middleHeight;
+	/*$headerFont,$borderColor,$photoContainerWidth,$photoContainerHeight,$photoContainerOffset,
+	$photoContainerImageOffset,$photoContainerImageWidth,
+	$photoContainerImageHeight*/
+	@include photoContainer($headerFont,$borderColor,500px,490px,100px,10px,355px, 400px);
+
+}
+
+#middleRightContainer{
+	height:$middleHeight;
+
+	.informationContainer{
+		float:left;
+		width:600px;
+		height: 650px;
+		border:1px solid red;
+
+		h2{
+			color:white;
+			font-family:$headerFont; 
+			margin-top: 120px;
+			width: 200px;
+			border: 1px solid green;
+		}
+
+		p{
+			color:white;
+			width: 150px;
+			border:1px solid orange;
+		}
+
+		.firstInformationContainerHeader{
+			margin-top: 0px;
+
+		}
+		.firstInformationContainerParagraph{
+			margin-top: 0px;
+			width: 300px;
+		}
+
+	}
+
+	.floatRightHeader{
+		float:right;
+		margin-top: 0px;
+		margin-right: 0px;
+
+
+	}
+	.floatRightParagraph{
+		float:right;
+		width:100px;
+		margin-top: 0px;
+
+	}
+	/*newBar mixin(x pixels from border, y pixels from Border, icon pixel size, icons per row)*/
+	@include newBar(200px,200px,40px,2);
+}
+
+#bottomLeftContainer{
+border-bottom:none;
+height:$bottomHeight;
+
+}
+
+#bottomRightContainer{
+border-bottom:none;
+height:$bottomHeight;
+}

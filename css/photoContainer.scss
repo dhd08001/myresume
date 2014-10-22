@@ -1,0 +1,31 @@
+@mixin photoContainer($headerFont,$borderColor,$photoContainerWidth,$photoContainerHeight,$photoContainerOffset,$photoContainerImageOffset,$photoContainerImageWidth,$photoContainerImageHeight){
+			.photoContainer{
+			margin:0 auto;
+			margin-top:$photoContainerOffset;
+			width:$photoContainerWidth;
+			height: $photoContainerHeight;
+			border:1px dotted white;
+			border-radius: 10px;
+			border-color: $borderColor;
+		h2{
+			color:white;
+			font-family: $headerFont;
+			margin:0 auto;
+			margin-top: $photoContainerImageOffset;
+			width:87px;
+		}
+		.photoContainerImage{
+			margin:0 auto;
+			margin-top:10px;
+			background-image: url('../pics/myphoto.jpg');
+			width: $photoContainerImageWidth;
+			height: $photoContainerImageHeight;
+			background-repeat: no-repeat;
+			background-size: $photoContainerImageWidth $photoContainerImageHeight;
+			border-radius: 5px;
+		}
+
+
+	}
+
+}

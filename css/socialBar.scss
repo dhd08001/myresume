@@ -1,0 +1,100 @@
+	@mixin newBar($socialPositionX, $socialPositionY, $imageIconSizes, $itemsPerRow){
+	/* Chrome, Safari, Opera */
+		@-webkit-keyframes myfirst {
+    	from {background-color: red;}
+    	to {background-color: yellow;}
+		}
+
+	/* Standard syntax */
+		@keyframes myfirst {
+    	from {background-color: red;}
+    	to {background-color: yellow;}
+
+	}
+	.divAnimation{
+	    	webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+	    	animation: myfirst 5s;	
+		}
+
+	.socialContainer{
+		float:right;
+		text-align: center;
+		margin-top:$socialPositionY;
+		margin-right: $socialPositionX;
+		width:$itemsPerRow*$imageIconSizes*1.2;
+
+
+				h2{
+				margin:0px;
+				padding:0px;
+				color:white;
+				font-family:$headerFont;
+				
+			}
+
+			.iconContainer {
+				margin:0px;
+				padding:0px;
+				margin-top: 10px;
+				width:$imageIconSizes*$itemsPerRow*1.2;
+				height:$imageIconSizes;
+			
+				li{
+				
+					margin:0px;
+					margin-left:0px;
+					padding:0px;
+					list-style-type: none;
+					display:inline-block;
+					width:$imageIconSizes;
+					height:$imageIconSizes;
+
+					a{
+						margin-left:0px;
+						width:$imageIconSizes;
+						height:$imageIconSizes;
+						.facebookImage{
+							margin:0px;
+							padding:0px;
+							width:$imageIconSizes*1.1;
+							height:$imageIconSizes*1.1;
+							background-image:url('../pics/facebookicon.png');
+							background-size:$imageIconSizes*1.1 $imageIconSizes*1.1;
+							background-repeat:no-repeat;
+							border-radius:5px;
+					
+						}
+
+						.twitterImage{
+							margin:0px;
+							padding:0px;
+							width:$imageIconSizes;
+							height:$imageIconSizes;
+							background-color:white;
+							background-image:url('../pics/twittericon.png');
+							background-size:$imageIconSizes $imageIconSizes;
+							background-repeat:no-repeat;
+							border-radius:5px;
+						}
+
+						.linkedinImage{
+							margin:0px;
+							padding:0px;
+							width:$imageIconSizes;
+							height:$imageIconSizes;
+							background-color:white;
+							background-image:url('../pics/linkedinicon.png');
+							background-size:$imageIconSizes $imageIconSizes;
+							background-repeat:no-repeat;
+							border-radius:5px;
+						}
+					}	
+				}
+			}
+
+			.firstIconContainer{
+				margin-top: 5px;
+			}
+		}
+
+}
